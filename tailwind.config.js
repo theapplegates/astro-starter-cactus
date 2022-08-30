@@ -9,9 +9,6 @@ module.exports = {
 	},
 	theme: {
 		extend: {
-			fontFamily: {
-					'montserrat': ['Montserrat'],
-			},
 			colors: {
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
