@@ -17,6 +17,19 @@ const {
 
 <html lang={siteMeta.lang}>
 	<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+	<script type="text/javascript">
+		algoliasearchNetlify({
+			appId: 'PU3QR0G3QT',
+			apiKey: 'd4971d8c955a1259339f8cd82d317f47',
+			siteId: '107600a0e7e39b5c041e8a0e53a7a06c43db544e8c0049e816062c35fc10ed40',
+			branch: 'main',
+			selector: 'div#search',
+		});
+	</script>
+	<div id="search"></div>
+
 		<BaseHead title={title} description={description} image={image} />
 		<script define:vars={{ siteMeta }}>
 			const root = document.documentElement;
