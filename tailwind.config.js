@@ -1,5 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
 	darkMode: "class",
@@ -8,6 +9,9 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			fontFamily: {
+					'montserrat': ['Montserrat'],
+			},
 			colors: {
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
